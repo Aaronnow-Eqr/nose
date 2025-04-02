@@ -1,0 +1,124 @@
+@media (max-width: 768px) {
+  .wrapper {
+      background-size: 400% 400%; 
+      background-position: center; 
+  }
+}
+
+@media (max-width: 480px) {
+  .wrapper {
+      background-size: 500% 500%; 
+      background-position: center center; 
+  }
+}
+
+.qloq {
+    background-color: #2c1447;
+    border: solid 8px #19082c;
+    margin: 0;
+    height:100dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+  position: relative;
+  background-color: #04AA6D;
+  border-radius: 10px;
+  border: none;
+  font-size: 28px;
+  color: #FFFFFF;
+  padding: 15px;
+  width: 100px;
+  text-align: center;
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+
+.button:after {
+  content: "";
+  background: #f1f1f1;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 200%;
+  height: 200%;
+  border-radius: 50%; 
+  transform: translate(-50%, -50%) scale(0); 
+  opacity: 0;
+  transition: transform 0.4s, opacity 0.4s;
+}
+
+
+.button:active:after {
+  transform: translate(-50%, -50%) scale(1); 
+  opacity: 0.3; 
+}
+  /* nose  */
+
+  .nose {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.image-overlay {
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    z-index: 1; 
+}
+
+.wrapper { 
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
+  background-size: 300% 300%;
+  animation: rainbow 12s ease infinite;
+  display: flex;
+
+
+  -webkit-animation: rainbow 10s ease infinite;
+  -z-animation: rainbow 10s ease infinite;
+  -o-animation: rainbow 10s ease infinite;
+    animation: rainbow 10s ease infinite;}
+  
+  @-webkit-keyframes rainbow {
+      0%{background-position:0% 82%}
+      50%{background-position:100% 19%}
+      100%{background-position:0% 82%}
+  }
+  @-moz-keyframes rainbow {
+      0%{background-position:0% 82%}
+      50%{background-position:100% 19%}
+      100%{background-position:0% 82%}
+  }
+  @-o-keyframes rainbow {
+      0%{background-position:0% 82%}
+      50%{background-position:100% 19%}
+      100%{background-position:0% 82%}
+  }
+  @keyframes rainbow { 
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+}
